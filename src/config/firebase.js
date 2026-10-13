@@ -3,12 +3,12 @@ import { getFirestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAeAl9CK-5OmuLbhhpW-eCQMFAt3FMSBqc",
-  authDomain: "ai-based-student.firebaseapp.com",
-  projectId: "ai-based-student",
-  storageBucket: "ai-based-student.firebasestorage.app",
-  messagingSenderId: "231576016241",
-  appId: "1:231576016241:web:skillbridge-admin-portal"
+  apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY || "AIzaSyAeAl9CK-5OmuLbhhpW-eCQMFAt3FMSBqc",
+  authDomain: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN || "ai-based-student.firebaseapp.com",
+  projectId: process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID || "ai-based-student",
+  storageBucket: process.env.EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET || "ai-based-student.firebasestorage.app",
+  messagingSenderId: process.env.EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID || "231576016241",
+  appId: process.env.EXPO_PUBLIC_FIREBASE_APP_ID || "1:231576016241:web:skillbridge-admin-portal"
 };
 
 // Initialize Firebase safely

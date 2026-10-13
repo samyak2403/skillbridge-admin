@@ -1,0 +1,10 @@
+# Vercel Ignore
+.expo/
+android/
+ios/
+.git/
+node_modules/
+dist/
+.env.local
+.env.*.local
+*.log
